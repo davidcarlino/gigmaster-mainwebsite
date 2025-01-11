@@ -122,6 +122,10 @@ html.loading * {
 }
 
 
+#footer > div > div.wrapper.footer-top-wrapper > div.c-col-3.sm-12 > div > img {
+    align-content: center;
+}
+
 
 ol,
 ul {
@@ -262,7 +266,7 @@ body.light {
 
 .site-header.dark {
     --mainColor: #191919;
-    --mainBackground: #ebebeb;
+    --mainBackground: #00209e;
     --secondaryBackground: #d7d7d7;
     color: var(--mainColor)
 }
@@ -875,6 +879,10 @@ template {
     display: none;
 }
 
+#content > div:nth-child(3) > div.wrapper-small > div.c-col-6.hide-mobile > div {
+    max-width: 27vh;
+    
+    }
 
 .material-icons {
     font-family: 'Material Icons';
@@ -2553,13 +2561,19 @@ div[data-elementor-type="sub-menu-type"] {
 
 #footer {
     background: var(--secondaryBackground);
-    padding-top: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin-bottom: 0;
     padding-bottom: 0;
     display: block;
     width: 100%;
     position: relative;
     z-index: 1;
+    height:100px;
+}
+
+#footer > img{
+    align: center;
 }
 
 .footer-top-wrapper {
@@ -9886,6 +9900,7 @@ content: attr(data-md-icon);
     --mobileWidth: 100%;
     width: var(--width);
     color: var(--mainColor);
+    text-align:center; 
 }
 
 .site-header .text-wrapper *,
@@ -11101,11 +11116,12 @@ ul.menu.social-menu li a::after {
   ------------------------------ */
 
 .nayla-button {
-    --color: var(--mainColor);
-    --bg: var(--secondaryBackground);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    display: inline-block;
-    margin-bottom: 1em;
+    padding: 10px 20px;
+    text-align: center;
 }
 
 .nayla-button.align-center {
@@ -11113,10 +11129,9 @@ ul.menu.social-menu li a::after {
 }
 
 .nayla-button a {
-    text-decoration: none;
-    color: var(--color);
     display: inline-block;
-    position: relative;
+    width: 100%;
+    text-align: center;
 }
 
 .nayla-button a:hover {
@@ -11375,6 +11390,7 @@ ul.menu.social-menu li a::after {
     -webkit-transform: translateX(-1em) translateY(1.5em);
     -ms-transform: translateX(-1em) translateY(1.5em);
     transform: translateX(-1em) translateY(1.5em);
+    display: none;
 }
 
 .nayla-button.fill.icon-left a,
